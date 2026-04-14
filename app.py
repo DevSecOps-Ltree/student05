@@ -226,8 +226,8 @@ def view_file():
             </body>
             </html>
             '''
-        except Exception as e:
-            return f'<p>Error: {str(e)}</p><p><a href="/">Back</a></p>'
+        except Exception:
+            return '<p>Error: An unexpected error occurred. Please try again later.</p><p><a href="/">Back</a></p>'
     else:
         return '''
         <html>
